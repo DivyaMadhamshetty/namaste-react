@@ -1,0 +1,27 @@
+Episode 2  :
+To bundle our app we should install "parcel"
+npm - manages packages but it is not node package manager
+package.json - package.json is a configuration for npm
+Bundler - Bundler package makes the app to bind all together, bundles all together and ships to the production and makes ready for production./ webpack Bundler/ parcel/veet are bundlers
+Two types of packages we can install
+1.Dev dependency - Development environment/phase - eg: npm install -D parcel
+2.Normal dependency - Production environment/phase
+The syntax of the npm version looks like the following.
+Major.Minor.Patch - 2.9.3
+Tilde (~) notation: It is used to match the most recent patch version. Tilde ~ notation freezes the major version and minor version. As we know patch updates are bug fixes that’s why we can say ~ notation allows us to automatically accept bug fixes.
+Example: The ~1.2.0 will update all the future patch updates. We have to write just ~1.2.0 and all the next patch update dependencies. For example, 1.2.1, 1.2.2, 1.2.5……………1.2.x.
+
+Caret (^) notation: It is used for automatically updating the minor updates along with patch updates. 
+Example: The ^1.2.4 will update all the future Minor and patch updates, for example, ^1.2.4 will automatically change the dependency to 1.x.x if any update occurs.
+PackageLock.json :   It will keep the track of exact version of the package that is being installed
+Integrity in PackageLock.Json : It is basically "Hash".It is because keeps the track of version of package that it is same in both dev and production.(PTO : When we say that it is working fine in our local but not in production this comes to rescue)
+NodeModules: Contains all the code that we fetched from npm./ It is a collection of dependencies/ Like a database for our whole packages.
+Transitive dependencies : Dependencies having own dependencies of it having its own depedencies(example : parcel has its own depedncies and its dependencies has its own and its own dependencies has its own)
+Its imp to put package.json and package-lock.json to git because it maintains the dependencies that our project needs.
+NodeModules is not so imp to put in git because ,If we have package.json and package-lock.json, we can reinstall the node modules. 
+What is npx ?
+npx is Node package Execute - Executes/ runs the package without installing it.
+Getting react with cdn links is not the appropriate/preferred way because 
+1.It takes costly operation i.e network calls.
+2.If version changes , we have to keep track and change it everytime
+If it is in package.json  means installed through npm it is easy to maintain the version changes and also calls because it is already present.

@@ -1,3 +1,35 @@
 #heading{
     color: red;
 }
+.container{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.subContainer{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.lastContainer{
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+}
+.searchBar{
+    width: 40%;
+    height: 25%;
+}
+.userIcon{
+    width: 5%;
+    height: 5%;
+}
