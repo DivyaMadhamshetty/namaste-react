@@ -1,35 +1,87 @@
-#heading{
-    color: red;
+.header {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 5px 10px #f2f2f2;
 }
-.container{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.navList {
+  display: flex;
 }
-.subContainer{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+.logo {
+  width: 50px;
 }
-.lastContainer{
-    justify-content: end;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+.navList {
+  list-style-type: none;
+  padding: 10px;
 }
-.logo{
-    width: 10%;
-    height: 10%;
+
+.listItem {
+  color: #005ce6;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
 }
-.searchBar{
-    width: 40%;
-    height: 25%;
+.restauarantCard {
+  width: 250px;
+  /* background-color: #f2f2f2; */
+  border-radius: 5px;
+  padding: 10px;
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+  box-shadow: 0px 0px 5px #aaaaaa;
+  background-color: #fff;
 }
-.userIcon{
-    width: 5%;
-    height: 5%;
+/* .rating {
+  display: flex;
+  flex-direction: row;
+} */
+/* .ratingCircle { */
+/* width: 25px;
+    height: 25px;
+    border-radius: 65%; */
+/* The clip-path property lets you clip an element to a basic shape or to an SVG source. */
+/* width: 100px;
+  padding: 10px;
+  clip-path: circle(11%);
+  background-color: #009933;
+} */
+/* .star {
+  width: 25px;
+  height: 25px;
+  border-radius: 65%;
+  /* The clip-path property lets you clip an element to a basic shape or to an SVG source. */
+/* background-color: red;
+}  */
+.restauarantCard :hover,
+.restauarantCard:active {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.restImage {
+  width: 100%;
+  height: 40%;
+}
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 10px 0px;
+  padding-top: 30px;
+}
+.searchBar {
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardContainer {
+  margin: 10px;
+  background-color: #f2f2f2;
+}
+.restaurantContainer {
+  margin: 10px;
+  display: flex;
 }
