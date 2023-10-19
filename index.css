@@ -63,7 +63,7 @@
 }
 .searchContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 15px 0px 10px 0px;
   padding-top: 30px;
 }
